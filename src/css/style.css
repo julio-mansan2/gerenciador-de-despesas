@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background:  var(--cream);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+.overview {
+    background: var(--soft-red);
+    border-radius: 10px;
+    padding: 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 18.75rem;
+    color: var(--very-pale-orange);
+    align-items: center;
+}
+
+.overview p {
+    font-weight: 400;
+    margin-bottom: 0.3125rem;
+}
+
+.overview h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.info {
+    background: var(--very-pale-orange);
+    padding: 1.875rem;
+    border-radius: 10px;
+}
+
+.info h1:first-child {
+    font-size: 1.8rem;
+    color: var(--dark-brown);
+    margin-bottom: 3.125rem;
+}
+
+.info ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.day p:last-child {
+    color: var(--medium-brown);
+}
+
+.mon {
+    width: 3.125rem;
+    height: 3.125rem;
+    background: var(--soft-red);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.tue {
+    width: 3.125rem;
+    height: 6.25rem;
+    background: var(--soft-red);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.wed {
+    width: 3.125rem;
+    height: 9.375rem;
+    background: var(--soft-red);
+    border-radius: 5px;
+    margin-bottom: 0.3125rem;
+}
+
+.thu {
+    width: 3.125rem;
+    height: 5rem;
+    background: var(--soft-red);
+    border-radius: 0.3125rem;
+    margin-bottom: 0.3125rem;
+}
+
+.fri {
+    width: 3.125rem;
+    height: 3.75rem;
+    background: var(--soft-red);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sat {
+    width: 3.125rem;
+    height: 7.5rem;
+    background: var(--soft-red);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sun {
+    width: 3.125rem;
+    height: 4.375rem;
+    background: var(--soft-red);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.value {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    background: var(--dark-brown);
+    color: var(--cream);
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+hr {
+    height: 1px;
+    border: 1px solid var(--cream);
+    margin-bottom: 1.875rem;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.day:hover .value {
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.month p {
+    color: var(--medium-brown);
+}
+
+.month h1 {
+    font-size: 2.5rem;
+    color: var(--dark-brown);
+}
+
+.last-month p {
+    color: var(--dark-brown);
+    font-weight: 700;
+    text-align: end;
+}
+
+.last-month span {
+    color: var(--medium-brown);
+}
+
+.graphic {
+    transition: 0.3s;
+}
+
+.day:hover .graphic {
+    opacity: 0.7;
+    cursor: pointer;
+}
+

@@ -1,0 +1,33 @@
+@media (max-width: 500px) {
+    body {
+        padding: 5%;
+        width: 100%;
+    }
+
+    .overview {
+        gap: 6.25rem;
+    }
+
+    .info .graphic {
+        width: 1.875rem;
+    }
+
+    .day p:last-child {
+        font-size: 0.8rem;
+    }
+
+    .month h1 {
+        font-size: 2rem;
+    }
+
+    .day {
+        position: relative;
+    }
+
+    .day:hover .value {
+        position: absolute;
+        font-size: 0.8rem;
+        left: -20%;
+        top: -30%;
+    }
+}
